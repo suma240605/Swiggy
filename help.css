@@ -1,0 +1,103 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Help Section */
+.help {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Styling */
+.help h2 {
+    text-align: center;
+    color: #333;
+}
+
+.help-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+/* Dropdown Styling */
+.help-form select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+.help-form select:hover,
+.help-form select:focus {
+    border-color: #ff6600;
+}
+
+/* Input & Textarea */
+.help-form input,
+.help-form textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.help-form input:hover,
+.help-form input:focus,
+.help-form textarea:hover,
+.help-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Submit Button */
+.help-form button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.help-form button:hover {
+    background: #e65c00;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .help {
+        width: 90%;
+    }
+}

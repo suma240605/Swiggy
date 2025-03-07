@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Left: Swiggy Logo & Dropdown -->
+        <div class="left-section">
+            <img src="swiggy.png" alt="Swiggy" class="logo">
+            <a href="index.html">Swiggy</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">Menu ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Kurnool</a>
+                    <a href="#">Nandyal</a>
+                    <a href="#">Guntur</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Navigation -->
+        <div class="nav">
+            <a href="offers.html"><i class="fa-solid fa-percent"></i><b>Offers</b></a>
+            <a href="help.html"><i class="fa-brands fa-hire-a-helper"></i><b>Help</b></a>
+            <a href="signin.html"><i class="fa-solid fa-user"></i><b>Sign In</b></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><b>Cart</b> </a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Mobile Menu (Hamburger) -->
+        <button class="menu-icon" onclick="toggleMobileMenu()">☰</button>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Offers</a>
+            <a href="#">Help</a>
+            <a href="#">Sign In</a>
+            <a href="#">Cart 🛒</a>
+        </div>
+    </div>
+
+    <div class="signin-container">
+        <div class="signin-box">
+            <h2>Sign In</h2>
+            <p>Welcome back! Please enter your details.</p>
+
+            <form class="signin-form" onsubmit="return handleSignIn(event)">
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" id="signin-btn">
+                    <span>Sign In</span>
+                    <div class="loading-spinner"></div>
+                </button>
+
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleSignIn(event) {
+            event.preventDefault();
+            const btn = document.getElementById("signin-btn");
+            btn.classList.add("loading");
+
+            setTimeout(() => {
+                btn.classList.remove("loading");
+                alert("Sign-in successful!");  // Replace with actual login logic
+            }, 2000);
+        }
+    </script>
+ <footer class="footer">
+    <div class="footer-container">
+        <!-- Swiggy Logo & Description -->
+        <div class="footer-section">
+            <img src="s1.jpg" alt="Swiggy Logo" class="footer-logo">
+            <p>Delicious food delivered to your doorstep. Order now and enjoy your favorite meals!</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope"></i> support@swiggy.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Kurnool, India</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Swiggy. All Rights Reserved.</p>
+        <p>Developed by suma likhitha reddy</p>
+    </div>
+</footer>
+
+</body>
+</html>

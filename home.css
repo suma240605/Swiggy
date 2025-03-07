@@ -1,0 +1,149 @@
+/* Main Section Styling */
+.wish {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Heading Style */
+.wish-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff7300;
+    margin-bottom: 20px;
+}
+
+/* Food Container: Row Layout */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Food Item Styling */
+.food-item {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 0.8s forwards;
+}
+
+/* Food Images */
+.food-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Food Text */
+.food-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Effects */
+.food-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.food-item:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Arrival Effect Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Home Content Container */
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    background: linear-gradient(135deg, #ff7b00, #ffb347);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 0.8s forwards;
+}
+
+/* Image Styling */
+.section img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Heading Styles */
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+.section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.section button {
+    background: white;
+    color: #ff7300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.section button:hover {
+    background: #fff4e6;
+    transform: scale(1.05);
+}
+
+/* Hover Effects */
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Arrival Effect Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 1fr;
+    }
+}

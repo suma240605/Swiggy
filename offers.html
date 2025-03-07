@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Offers</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="left-section">
+            <img src="swiggy.png" alt="Swiggy" class="logo">
+            <a href="index.html">Swiggy</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">Menu ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Kurnool</a>
+                    <a href="#">Nandyal</a>
+                    <a href="#">Guntur</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="offers.html"><i class="fa-solid fa-percent"></i><b> Offers</b></a>
+            <a href="help.html"><i class="fa-brands fa-hire-a-helper"></i><b> Help</b></a>
+            <a href="signin.html"><i class="fa-solid fa-user"></i><b> Sign In</b></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><b> Cart</b> </a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <button class="menu-icon" onclick="toggleMobileMenu()">☰</button>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Offers</a>
+            <a href="#">Help</a>
+            <a href="#">Sign In</a>
+            <a href="#">Cart 🛒</a>
+        </div>
+    </div>
+
+    <!-- Offers Section -->
+    <div class="offers-container">
+        <h1 class="offers-title">Exclusive Offers & Discounts</h1>
+
+        <div class="offers-grid">
+            <!-- Discount Deals -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-tags"></i> Discount Deals</h2>
+                <img src="discount.jpg" alt="Discount Offer">
+                <p>Get up to <strong>50% OFF</strong> on select restaurants! Limited time only.</p>
+                <button class="offer-btn">Grab Deal</button>
+            </div>
+
+            <!-- Festival Offers -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-gift"></i> Festival Offers</h2>
+                <img src="festival.jpg" alt="Festival Offer">
+                <p>Celebrate with <strong>Festive Combo Deals</strong> and save up to 40%!</p>
+                <button class="offer-btn">View Offers</button>
+            </div>
+
+            <!-- Hotel Offers -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-hotel"></i> Hotel Offers</h2>
+                <img src="hotel.jpg" alt="Hotel Offer">
+                <p>Enjoy exclusive discounts at <strong>5-Star Hotels</strong> when you order via Swiggy.</p>
+                <button class="offer-btn">Book Now</button>
+            </div>
+
+            <!-- Swiggy Exclusive Offers -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-star"></i> Swiggy Exclusive Offers</h2>
+                <img src="swiggy-offer.jpg" alt="Swiggy Exclusive">
+                <p>Swiggy Super Users get extra <strong>20% OFF</strong> on every order!</p>
+                <button class="offer-btn">Subscribe Now</button>
+            </div>
+
+            <!-- Coupon Offers -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-ticket"></i> Coupon Offers</h2>
+                <img src="coupon.jpg" alt="Coupon Offers">
+                <p>Use code <strong>SAVE50</strong> to get ₹50 off on orders above ₹299.</p>
+                <button class="offer-btn">Apply Coupon</button>
+            </div>
+
+            <!-- Card Offers -->
+            <div class="offer-card">
+                <h2><i class="fa-solid fa-credit-card"></i> Card Offers</h2>
+                <img src="card-offer.jpg" alt="Card Offers">
+                <p>Pay with HDFC, ICICI, or SBI cards & get up to <strong>₹200 Cashback</strong>!</p>
+                <button class="offer-btn">Pay & Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="s1.jpg" alt="Swiggy Logo" class="footer-logo">
+                <p>Delicious food delivered to your doorstep. Order now and enjoy your favorite meals!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> support@swiggy.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Kurnool, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Swiggy. All Rights Reserved.</p>
+            <p>Developed by Suma Likhitha Reddy</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7300;
+    padding: 15px 30px;
+    position: relative;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    margin-left: 20px;
+}
+
+.dropdown-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: lightgray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    border-radius: 5px;
+    top: 35px;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+.nav input {
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+/* Mobile Menu */
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background-color: lightgray;
+}
+
+.show {
+    display: flex;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Animation */
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-5px); }
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
